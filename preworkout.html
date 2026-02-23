@@ -1,0 +1,64 @@
+<!DOCTYPE html><html>
+    <head>
+      <title>Fresh site</title>
+      <link rel="stylesheet" href="fresh.css">
+    </head>
+    <body>
+        <br><br>
+        <header>
+            <div  class="underline">Pre-Workout</div>
+            <a href="fresh.html" class="back">Go back.</a>
+            <img src="redcircle.png" class="redcircle">
+            <div class="menu-button" onclick="toggleMenu()">☰ </div>
+
+        <nav class="dropdown-menu" id="dropdown">
+    <ul>
+      <li><a href="shoes.html">Shoes</a></li>
+      <li><a href="skates.html">Skateboards</a></li>
+      <li><a href="creatine.html">Creatine</a></li>
+      <li><a href="whey.html">Whey</a></li>
+      <li><a href="preworkout.html">Preworkout</a></li>
+      <li><a href="shakers.html">Shakers</a></li>
+    </ul>
+  </nav>
+        </header>
+        <main class="container">
+            <section>
+                <h1>Featured products:</h1>
+            </section>
+            <section class="row">
+               <div class="block">
+                <img class="blockimage" src="pre1.png">
+                <p class="blocktext">Madness Pre Workout</p>
+            </div>
+             <div class="block">
+                <img class="blockimage" src="pre2.png">
+                <p class="blocktext">Warcry ULTRA Pre Workout</p>
+            </div>
+            </section>
+            <section>
+                <h1>All products:</h1>
+            </section>
+            <section class="row">
+            <div class="block">
+                <img class="blockimage" src="pre1.png">
+                <p class="blocktext">Madness Pre Workout</p>
+            </div>
+             <div class="block">
+                <img class="blockimage" src="pre2.png">
+                <p class="blocktext">Warcry ULTRA Pre Workout</p>
+            </div>
+        </section>
+        </main>
+        <script>
+function toggleMenu() {
+  const menu = document.getElementById('dropdown');
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'block';
+  }
+}
+</script>
+    </body>
+</html>
